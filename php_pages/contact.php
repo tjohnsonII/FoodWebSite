@@ -51,4 +51,7 @@
     </div>
 </footer>
 </body>
+
+<script src="../scripts/contact.js"></script>
+
 </html>

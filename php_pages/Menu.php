@@ -110,5 +110,8 @@
         <p>&copy; 2024 Burger Restaurant. All rights reserved.</p>
     </div>
 </footer>
+
+<script src="../scripts/menu.js"></script>
+
 </body>
 </html>
