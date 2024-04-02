@@ -3,11 +3,11 @@ document.addEventListener("DOMContentLoaded", function() {
     const quantityInputs = document.querySelectorAll('input[type="number"]');
 
     // Define variables to store quantities
-    let burgerQuantity = 1;
-    let chickenSandwichQuantity = 1;
-    let friesQuantity = 1;
-    let cokeQuantity = 1;
-    let shakeQuantity = 1;
+    let burgerQuantity = 0;
+    let chickenSandwichQuantity = 0;
+    let friesQuantity = 0;
+    let cokeQuantity = 0;
+    let shakeQuantity = 0;
 
     // Function to update quantity variables
     function updateQuantities() {
@@ -43,6 +43,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     incrementBtn.addEventListener('click', function() {
         let currentValue = parseInt(quantityInput.value);
-        quantityInput.value = currentValue + 1;
+        if(currentValue > 0) {
+            quantityInput.value = currentValue + 1;
+        }
     });
 });
