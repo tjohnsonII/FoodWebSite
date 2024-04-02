@@ -23,36 +23,75 @@
 
 <!-- Menu Section -->
 <section class="menu-section">
-    <div class="container">
-        <h2>Our Menu</h2>
-        <div class="menu">
-            <div class="item">
-                <img src="../images/burger.jpeg" alt="Burger">
-                <h3>Burger</h3>
-                <p>Our classic beef burger served with lettuce, tomato, and pickles.</p>
-            </div>
-            <div class="item">
-                <img src="../images/chickenSandwich.jpeg" alt="Chicken Sandwich">
-                <h3>Chicken Sandwich</h3>
-                <p>Grilled chicken breast served on a bun with mayo, lettuce, and tomato.</p>
-            </div>
-            <div class="item">
-                <img src="../images/fries.jpeg" alt="Fries">
-                <h3>Fries</h3>
-                <p>Crispy golden fries seasoned with salt.</p>
-            </div>
-            <div class="item">
-                <img src="../images/coke.jpeg" alt="Coke">
-                <h3>Coke</h3>
-                <p>Refreshing Coca-Cola served ice cold.</p>
-            </div>
-            <div class="item">
-                <img src="../images/shake.jpeg" alt="Shake">
-                <h3>Shake</h3>
-                <p>Rich and creamy milkshake available in chocolate, vanilla, and strawberry flavors.</p>
+    <section id="burger">
+        <div class="container">
+            <h2>Our Menu</h2>
+            <div class="menu">
+                <div class="item">
+                    <img src="../images/burger.jpeg" alt="Burger">
+                    <h3>Burger</h3>
+                    <p>Our classic beef burger served with lettuce, tomato, and pickles.</p>
+                </div>
+                <!-- Other menu items -->
             </div>
         </div>
-    </div>
+    </section>
+
+    <section id="chicken-sandwich">
+        <div class="container">
+            <h2>Our Menu</h2>
+            <div class="menu">
+                <div class="item">
+                    <img src="../images/chickenSandwich.jpeg" alt="Chicken Sandwich">
+                    <h3>Chicken Sandwich</h3>
+                    <p>Grilled chicken breast served on a bun with mayo, lettuce, and tomato.</p>
+                </div>
+                <!-- Other menu items -->
+            </div>
+        </div>
+    </section>
+
+    <section id="fries">
+        <div class="container">
+            <h2>Our Menu</h2>
+            <div class="menu">
+                <div class="item">
+                    <img src="../images/fries.jpeg" alt="Fries">
+                    <h3>Fries</h3>
+                    <p>Crispy golden fries seasoned with salt.</p>
+                </div>
+                <!-- Other menu items -->
+            </div>
+        </div>
+    </section>
+
+    <section id="coke">
+        <div class="container">
+            <h2>Our Menu</h2>
+            <div class="menu">
+                <div class="item">
+                    <img src="../images/coke.jpeg" alt="Coke">
+                    <h3>Coke</h3>
+                    <p>Refreshing Coca-Cola served ice cold.</p>
+                </div>
+                <!-- Other menu items -->
+            </div>
+        </div>
+    </section>
+
+    <section id="shake">
+        <div class="container">
+            <h2>Our Menu</h2>
+            <div class="menu">
+                <div class="item">
+                    <img src="../images/shake.jpeg" alt="Shake">
+                    <h3>Shake</h3>
+                    <p>Rich and creamy milkshake available in chocolate, vanilla, and strawberry flavors.</p>
+                </div>
+                <!-- Other menu items -->
+            </div>
+        </div>
+    </section>
 </section>
 
 <!-- Footer Section -->
