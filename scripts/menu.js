@@ -28,3 +28,21 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // You can use burgerQuantity, chickenSandwichQuantity, friesQuantity, cokeQuantity, shakeQuantity variables as needed.
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const decrementBtn = document.querySelector('.decrement');
+    const incrementBtn = document.querySelector('.increment');
+    const quantityInput = document.getElementById('burger-quantity');
+
+    decrementBtn.addEventListener('click', function() {
+        let currentValue = parseInt(quantityInput.value);
+        if (currentValue > 1) {
+            quantityInput.value = currentValue - 1;
+        }
+    });
+
+    incrementBtn.addEventListener('click', function() {
+        let currentValue = parseInt(quantityInput.value);
+        quantityInput.value = currentValue + 1;
+    });
+});
