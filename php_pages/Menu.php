@@ -10,7 +10,7 @@
 <!-- Navigation Bar -->
 <nav class="navbar">
     <div class="container">
-        <h1 class="logo">Burger Restaurant</h1>
+        <h1 class="logo">Burger Joint</h1>
         <ul class="nav-links">
             <li><a href="../php_pages/index.php">Home</a></li>
             <li><a href="../php_pages/Menu.php">Menu</a></li>
@@ -25,12 +25,14 @@
 <section class="menu-section">
     <section id="burger">
         <div class="container">
-            <h2>Our Menu</h2>
+            <h2>Juicy Burgers!</h2>
             <div class="menu">
                 <div class="item">
                     <img src="../images/burger.jpeg" alt="Burger">
                     <h3>Burger</h3>
                     <p>Our classic beef burger served with lettuce, tomato, and pickles.</p>
+                    <label for="burger-quantity">Quantity:</label>
+                    <input type="number" id="burger-quantity" name="burger-quantity" min="1" value="1">
                 </div>
                 <!-- Other menu items -->
             </div>
@@ -39,12 +41,14 @@
 
     <section id="chicken-sandwich">
         <div class="container">
-            <h2>Our Menu</h2>
+            <h2>Crispy Chicken Sandwich!</h2>
             <div class="menu">
                 <div class="item">
                     <img src="../images/chickenSandwich.jpeg" alt="Chicken Sandwich">
                     <h3>Chicken Sandwich</h3>
                     <p>Grilled chicken breast served on a bun with mayo, lettuce, and tomato.</p>
+                    <label for="Chicken-Sandwich-quantity">Quantity:</label>
+                    <input type="number" id="Chicken-Sandwich-quantity" name="Chicken-Sandwich-quantity" min="1" value="1">
                 </div>
                 <!-- Other menu items -->
             </div>
@@ -53,12 +57,14 @@
 
     <section id="fries">
         <div class="container">
-            <h2>Our Menu</h2>
+            <h2>Hot Crispy Fries!</h2>
             <div class="menu">
                 <div class="item">
                     <img src="../images/fries.jpeg" alt="Fries">
                     <h3>Fries</h3>
                     <p>Crispy golden fries seasoned with salt.</p>
+                    <label for="fries-quantity">Quantity:</label>
+                    <input type="number" id="fries-quantity" name="fries-quantity" min="1" value="1">
                 </div>
                 <!-- Other menu items -->
             </div>
@@ -67,12 +73,14 @@
 
     <section id="coke">
         <div class="container">
-            <h2>Our Menu</h2>
+            <h2>Ice Cold Cola</h2>
             <div class="menu">
                 <div class="item">
                     <img src="../images/coke.jpeg" alt="Coke">
                     <h3>Coke</h3>
                     <p>Refreshing Coca-Cola served ice cold.</p>
+                    <label for="coke-quantity">Quantity:</label>
+                    <input type="number" id="coke-quantity" name="coke-quantity" min="1" value="1">
                 </div>
                 <!-- Other menu items -->
             </div>
@@ -81,12 +89,14 @@
 
     <section id="shake">
         <div class="container">
-            <h2>Our Menu</h2>
+            <h2>Delicious Milk Shakes!</h2>
             <div class="menu">
                 <div class="item">
                     <img src="../images/shake.jpeg" alt="Shake">
                     <h3>Shake</h3>
                     <p>Rich and creamy milkshake available in chocolate, vanilla, and strawberry flavors.</p>
+                    <label for="shake-quantity">Quantity:</label>
+                    <input type="number" id="shake-quantity" name="shake-quantity" min="1" value="1">
                 </div>
                 <!-- Other menu items -->
             </div>
