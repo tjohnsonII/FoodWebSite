@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     decrementBtn.addEventListener('click', function() {
         let currentValue = parseInt(quantityInput.value);
-        if (currentValue > 1) {
+        if (currentValue > 0) {
             quantityInput.value = currentValue - 1;
         }
     });

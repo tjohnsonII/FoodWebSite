@@ -23,7 +23,7 @@
 
 <!-- Menu Section -->
 <section class="menu-section">
-    
+
     <section id="burger">
         <div class="container">
             <h2>Juicy Burgers!</h2>
@@ -34,7 +34,7 @@
                         <label for="burger-quantity">Quantity:</label>
                         <div class="quantity-input">
                             <button type="button" class="decrement">-</button>
-                            <input type="number" id="burger-quantity" name="burger-quantity" min="1" value="1">
+                            <input type="number" id="burger-quantity" name="burger-quantity" min="0" value="0">
                             <button type="button" class="increment">+</button>
                         </div>
                     </div>
@@ -52,7 +52,7 @@
                     <label for="Chicken-Sandwich-quantity">Quantity:</label>
                     <div class="quantity">
                         <button class="decrement-btn">-</button>
-                        <input type="number" id="Chicken-Sandwich-quantity" name="Chicken-Sandwich-quantity" min="1" value="1">
+                        <input type="number" id="Chicken-Sandwich-quantity" name="Chicken-Sandwich-quantity" min="0" value="0">
                         <button class="increment-btn">+</button>
                     </div>
                 </div>
@@ -70,7 +70,7 @@
                     <label for="fries-quantity">Quantity:</label>
                     <div class="quantity">
                         <button class="decrement-btn">-</button>
-                        <input type="number" id="fries-quantity" name="fries-quantity" min="1" value="1">
+                        <input type="number" id="fries-quantity" name="fries-quantity" min="0" value="0">
                         <button class="increment-btn">+</button>
                     </div>
                 </div>
@@ -87,7 +87,7 @@
                     <label for="coke-quantity">Quantity:</label>
                     <div class="quantity">
                         <button class="decrement-btn">-</button>
-                        <input type="number" id="coke-quantity" name="coke-quantity" min="1" value="1">
+                        <input type="number" id="coke-quantity" name="coke-quantity" min="0" value="0">
                         <button class="increment-btn">+</button>
                     </div>
                 </div>
@@ -105,7 +105,7 @@
                     <label for="shake-quantity">Quantity:</label>
                     <div class="quantity">
                         <button class="decrement-btn">-</button>
-                        <input type="number" id="shake-quantity" name="shake-quantity" min="1" value="1">
+                        <input type="number" id="shake-quantity" name="shake-quantity" min="0" value="0">
                         <button class="increment-btn">+</button>
                     </div>
                 </div>
