@@ -23,6 +23,7 @@
 
 <!-- Menu Section -->
 <section class="menu-section">
+    
     <section id="burger">
         <div class="container">
             <h2>Juicy Burgers!</h2>
