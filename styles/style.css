@@ -63,11 +63,6 @@ nav ul li a:hover::before {
     transform: scaleX(1);
 }
 
-/* Main styles */
-main {
-    max-width: 800px;
-    margin: 20px auto;
-}
 
 .menu {
     display: grid;

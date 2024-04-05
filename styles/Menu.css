@@ -13,106 +13,254 @@ body {
     line-height: 1.6;
 }
 
-/* Navigation Bar styles */
-.navbar {
-    background-color: #65a83c; /* Green */
-    color: #fff;
-    padding: 20px 0;
+/* Desktop Styles */
+@media screen and (min-width: 1024px) {
+    /* Navigation styles */
+    nav ul {
+        list-style: none;
+        background-color: yellow;
+    }
+
+    nav ul li {
+        display: inline-block;
+        margin-right: 20px;
+    }
+
+    .navbar h1 {
+        justify-content: center;
+        background-color: #4CAF50;
+    }
+
+    nav ul li a {
+        color: black;
+        text-decoration: none;
+        position: relative;
+        transition: color 0.3s ease;
+    }
+
+    nav ul li a::before {
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #ffff;
+        transform: scaleX(0);
+        transition: transform 0.3s ease;
+    }
+
+    nav ul li a:hover {
+        color: #ffcc00; /* Yellow */
+    }
+
+    nav ul li a:hover::before {
+        transform: scaleX(1);
+    }
+
+    .logo {
+        font-size: 2rem; /* Increase logo size for desktop */
+    }
+
+    /* Menu Section styles */
+    .menu-section {
+        padding: 50px 0; /* Increase top and bottom padding */
+    }
+
+    .item {
+        padding: 20px; /* Add padding to menu items */
+    }
+
+    .item h3 {
+        font-size: 1.5rem; /* Increase heading size for menu items */
+    }
+
+    .item p {
+        font-size: 1.2rem; /* Increase paragraph size for menu items */
+    }
+
+    /* Footer styles */
+    .footer {
+        padding: 30px 0; /* Increase top and bottom padding */
+    }
+
+    .footer p {
+        font-size: 1rem; /* Increase font size for footer text */
+    }
+
+    /* Submit section styles */
+    .submit {
+        display: flex;
+        justify-content: center; /* Center the button horizontally */
+        margin-top: 50px; /* Add more space above the button */
+    }
+
+    .order_button {
+        width: 200px; /* Set a fixed width for the button */
+        height: 50px; /* Set a fixed height for the button */
+        background-color: #4CAF50; /* Default background color */
+        color: white; /* Default text color */
+        border: none; /* Remove border */
+        border-radius: 25px; /* Add some border radius for rounded corners */
+        font-size: 1.2rem; /* Increase font size for better readability */
+        cursor: pointer; /* Change cursor to pointer on hover */
+        transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+    }
+
+    .order_button:hover {
+        background-color: #45a049; /* Darker shade of green on hover */
+    }
 }
 
-.navbar .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+
+/* Tablet Styles */
+@media screen and (max-width: 1023px) {
+    /* Main content area */
+    main {
+        padding: 0 20px; /* Add padding to the sides */
+    }
+
+    /* Navigation Bar styles */
+    .navbar {
+        flex-direction: column; /* Change flex direction to column */
+        align-items: center; /* Center items horizontally */
+        background-color: yellow;
+    }
+
+    .navbar h1 {
+        justify-content: center;
+        background-color: #4CAF50;
+    }
+
+    .nav-links {
+        margin-top: 20px; /* Add margin between logo and nav links */
+        text-align: center; /* Center the nav links */
+    }
+
+    .nav-links li {
+        margin: 10px 0; /* Add vertical margin between nav links */
+    }
+
+    /* Hover effect for nav links */
+    .nav-links li a:hover {
+        color: #ffcc00; /* Yellow */
+    }
+
+    /* Menu Section styles */
+    .menu {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust grid layout for better responsiveness */
+        gap: 20px; /* Add gap between menu items */
+    }
+
+    .item {
+        padding: 20px; /* Add padding to menu items */
+    }
+
+    .item h3 {
+        font-size: 1.2rem; /* Adjust heading size for menu items */
+    }
+
+    .item p {
+        font-size: 1rem; /* Adjust paragraph size for menu items */
+    }
+
+    /* Submit section styles */
+    .submit {
+        display: flex;
+        justify-content: center; /* Center the button horizontally */
+        margin-top: 30px; /* Add more space above the button */
+    }
+
+    .order_button {
+        width: 100%; /* Make the button full width */
+        height: 50px; /* Set a fixed height for the button */
+        background-color: #4CAF50; /* Default background color */
+        color: white; /* Default text color */
+        border: none; /* Remove border */
+        border-radius: 5px; /* Add some border radius for rounded corners */
+        font-size: 1rem; /* Adjust font size */
+        cursor: pointer; /* Change cursor to pointer on hover */
+        transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+    }
+
+    .order_button:hover {
+        background-color: #45a049; /* Darker shade of green on hover */
+    }
 }
 
-.logo {
-    font-size: 1.5rem;
-}
 
-.nav-links li {
-    display: inline-block;
-    margin-left: 20px;
-}
 
-.nav-links li a {
-    color: black;
-    text-decoration: none;
-    position: relative;
-    transition: color 0.3s ease;
-}
+/* Mobile Styles */
+@media screen and (max-width: 767px) {
+    /* Main content area */
+    main {
+        padding: 0 20px; /* Add padding to the sides */
+    }
 
-.nav-links li a::before {
-    content: '';
-    position: absolute;
-    bottom: -2px;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background-color: #fff;
-    transform: scaleX(0);
-    transition: transform 0.3s ease;
-}
+    /* Navigation Bar styles */
+    .navbar {
+        flex-direction: column; /* Change flex direction to column */
+        align-items: center; /* Center items horizontally */
+        background-color: yellow;
+    }
 
-.nav-links li a:hover {
-    color: #ffcc00; /* Yellow */
-}
+    .navbar h1 {
+        justify-content: center;
+        background-color: #4CAF50;
+    }
 
-.nav-links li a:hover::before {
-    transform: scaleX(1);
-}
+    .nav-links {
+        margin-top: 20px; /* Add margin between logo and nav links */
+        text-align: center; /* Center the nav links */
+    }
 
-/* Menu Section styles */
-.menu-section {
-    padding: 50px 0;
-}
+    .nav-links li {
+        margin: 10px 0; /* Add vertical margin between nav links */
+    }
 
-.menu-section h2 {
-    text-align: center;
-    margin-bottom: 30px;
-}
+    /* Hover effect for nav links */
+    .nav-links li a:hover {
+        color: #ffcc00; /* Yellow */
+    }
 
-.menu {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-}
+    /* Menu Section styles */
+    .menu {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust grid layout for better responsiveness */
+        gap: 20px; /* Add gap between menu items */
+    }
 
-.item {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    transition: transform 0.3s ease;
-}
+    .item {
+        padding: 20px; /* Add padding to menu items */
+    }
 
-.item:hover {
-    transform: translateY(-5px);
-}
+    .item h3 {
+        font-size: 1.2rem; /* Adjust heading size for menu items */
+    }
 
-.item img {
-    width: 100%;
-    border-radius: 8px 8px 0 0;
-}
+    .item p {
+        font-size: 1rem; /* Adjust paragraph size for menu items */
+    }
 
-.item h3 {
-    font-size: 1.2rem;
-    margin: 10px 0;
-}
+    /* Submit section styles */
+    .submit {
+        display: flex;
+        justify-content: center; /* Center the button horizontally */
+        margin-top: 30px; /* Add more space above the button */
+    }
 
-.item p {
-    font-size: 1rem;
-    padding: 0 20px 20px;
-}
+    .order_button {
+        width: 100%; /* Make the button full width */
+        height: 50px; /* Set a fixed height for the button */
+        background-color: #4CAF50; /* Default background color */
+        color: white; /* Default text color */
+        border: none; /* Remove border */
+        border-radius: 5px; /* Add some border radius for rounded corners */
+        font-size: 1rem; /* Adjust font size */
+        cursor: pointer; /* Change cursor to pointer on hover */
+        transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+    }
 
-/* Footer styles */
-.footer {
-    background-color: #65a83c; /* Green */
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-}
-
-.footer p {
-    font-size: 0.8rem;
+    .order_button:hover {
+        background-color: #45a049; /* Darker shade of green on hover */
+    }
 }
