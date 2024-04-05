@@ -127,6 +127,7 @@
         </footer>
 
         <script src="../scripts/menu.js"></script>
+        <script src="../scripts/order.js"></script>
 
     </body>
 </html>
